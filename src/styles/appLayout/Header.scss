@@ -1,0 +1,55 @@
+@import '../variables.scss';
+
+.header-container {
+  border-bottom: 1px solid $grayLight;
+  padding-left: 55px;
+  .search-bar {
+    flex: 1;
+
+    input {
+      width: 80%;
+      border: none;
+      outline: none;
+      color: $grayDark;
+
+      &::placeholder {
+        color: $grayMedium;
+      }
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+
+    svg {
+      font-size: 20px;
+      color: $grayDark;
+    }
+  }
+
+  .header-icons {
+    svg {
+      font-size: 20px;
+      color: $blue;
+    }
+  }
+}
+
+.vertical-line {
+  width: 1px;
+  height: 64px;
+  background-color: $grayLight; /* Specify the color of the vertical line */
+  margin: 0 15px; /* Adjust the margin as needed */
+}
+
+.cc-icon{
+  padding-left: 55px;
+  margin-right: 38px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    display: none !important;
+  }
+}

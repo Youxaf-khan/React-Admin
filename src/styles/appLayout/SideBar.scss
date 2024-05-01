@@ -1,0 +1,82 @@
+@import '../variables.scss';
+
+.dark-sidebar-container {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 55px;
+  background-color: $blueDark;
+  color: $grayLight;
+  height: auto;
+  transition: 0.5s;
+  overflow-x: hidden;
+  white-space: nowrap;
+  box-shadow: 2px 1px 3px $grayLight;
+  position: fixed;
+
+
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+
+  .icon {
+    max-width: 20px;
+  }
+
+  .tab-item.active {
+  background-color: $blueDark;
+  color: white;
+  border-bottom: 1px solid white;
+  }
+}
+
+.light-sidebar-container {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 55px;
+  background-color: white;
+  color: $grayDark;
+  height: auto;
+  transition: 0.5s;
+  overflow-x: hidden;
+  white-space: nowrap;
+  box-shadow: 2px 1px $grayLight;
+  position: fixed;
+
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+
+  .icon {
+    max-width: 20px;
+  }
+
+  .tab-item.active {
+  background-color: white;
+  color: $blue;
+  border-bottom: 1px solid $blue;
+  }
+}
+
+.pinned-sidebar {
+  position: relative;
+}
+
+.expanded {
+  width: 240px;
+}
+
+.shrinked {
+  width: 55px;
+}
+
+@media screen and (max-width: 768px) {
+  .shrinked {
+    width: 0px;
+  }
+}

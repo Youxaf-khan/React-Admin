@@ -1,0 +1,14 @@
+@import '../variables.scss';
+
+.bottom-navbar-container {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .bottom-navbar-container {
+    display: none !important;
+  }
+}

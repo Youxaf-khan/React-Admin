@@ -1,0 +1,38 @@
+@import 'variables.scss';
+
+.modal-header {
+  border-bottom: 0 none;
+}
+
+.modal-content {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1 none;
+}
+
+.btn-link, .btn-link:hover, .btn-link:active, .btn-link:focus {
+  color: $blue;
+  font-size: small;
+}
+
+.btn-secondary:hover {
+  background-color: #068BCE;
+  border-color: white;
+}
+
+.account-type {
+  display: block;
+  color: #6FC4E8;
+  font-style: italic;
+  font-size: small;
+}
+
+.username {
+  margin-bottom: 0;
+}
